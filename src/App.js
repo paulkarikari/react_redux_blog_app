@@ -3,12 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 import { Provider } from 'react-redux'
-import { createStore, applyMiddleware } from 'redux';
+import store from './store'
 
 import Post from './components/Posts';
 import PostForm from './components/PostForm';
 
-const store = createStore(() => [], {}, applyMiddleware());
 
 class App extends Component {
 	render() {
