@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 
-class Post extends Component {
+class PostForm extends Component {
 	render() {
-		return <div />;
+		return (
+			<div>
+				<h1>Add Post</h1>
+			</div>
+		);
 	}
 }
+
+export default PostForm;
