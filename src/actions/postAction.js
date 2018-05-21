@@ -10,6 +10,7 @@ export const fetchPosts = () => dispatch => {
 }
 
 export const createPost = (postData) => dispatch => {
+
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         headers: {
