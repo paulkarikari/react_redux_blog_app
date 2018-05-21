@@ -10,7 +10,7 @@ export default (state = initialState, action) => {
         case FETCH_POSTS:
             return {
                 ...state,
-                item: action.payload
+                items: action.payload
             }
         default:
             return state;
