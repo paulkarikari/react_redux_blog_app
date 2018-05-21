@@ -12,6 +12,11 @@ export default (state = initialState, action) => {
                 ...state,
                 items: action.payload
             }
+        case NEW_POSTS:
+            return {
+                ...state,
+                item: action.payload
+            }
         default:
             return state;
     }
