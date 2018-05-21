@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from "react-redux";
+import { fetchPost } from "../actions/postAction";
 
 class Post extends Component {
 	constructor(props) {
@@ -9,9 +11,7 @@ class Post extends Component {
 	}
 
 	componentWillMount() {
-		fetch('https://jsonplaceholder.typicode.com/posts')
-			.then(res => res.json())
-			.then(data => this.setState({ posts: data }));
+		this.props.fetch
 	}
 
 	render() {
@@ -29,4 +29,4 @@ class Post extends Component {
 		);
 	}
 }
-export default Post;
+export default connect()();
