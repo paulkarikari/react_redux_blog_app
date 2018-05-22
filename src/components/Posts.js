@@ -39,4 +39,8 @@ const mapStateToProps = state => ({
 	newPost: state.posts.item
 });
 
+Posts.protoTypes = {
+	fetchPosts: PropTypes.func.isRequired
+}
+
 export default connect(mapStateToProps, { fetchPosts })(Posts);
